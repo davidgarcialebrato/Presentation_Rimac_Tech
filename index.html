@@ -374,35 +374,48 @@ p, li, td, th {
     </div>
 </div>
 
-<!-- SLIDE 3: ELECTRICAL CHARACTERISTICS -->
 <div class="slide-container">
-    <h2 class="slide-title">2. Module Electrical Characteristics</h2>
+    <h2 class="slide-title">3. Module Electrical Characteristics</h2>
     <div class="content-area">
-        <div class="electrical-grid">
-            <div class="data-card">
-                <i class="fa-solid fa-battery-half"></i>
-                <span class="card-label">Nominal Voltage</span>
-                <span class="card-value">46.8 V</span>
+        <div class="two-column">
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div style="background: #f8fafc; padding: 25px; border-left: 4px solid #00f2ff; border-radius: 4px;">
+                        <i class="fa-solid fa-battery-empty" style="color: #00f2ff; margin-bottom: 15px; display: block;"></i>
+                        <h4 style="font-size: 14px; color: #1e293b; margin-bottom: 10px;">Nominal Voltage</h4>
+                        <span style="font-size: 36px; font-weight: 700; color: #0f172a;">46.8 V</span>
+                    </div>
+                    <div style="background: #f8fafc; padding: 25px; border-left: 4px solid #00f2ff; border-radius: 4px;">
+                        <i class="fa-solid fa-bolt" style="color: #00f2ff; margin-bottom: 15px; display: block;"></i>
+                        <h4 style="font-size: 14px; color: #1e293b; margin-bottom: 10px;">Max Voltage</h4>
+                        <span style="font-size: 36px; font-weight: 700; color: #0f172a;">54.6 V</span>
+                    </div>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-left: 4px solid #00f2ff; border-radius: 4px; flex-grow: 1;">
+                    <h3 style="font-size: 16px; margin-bottom: 15px; color: #0f172a;">Design Implications</h3>
+                    <p style="font-size: 14px; color: #475569; line-height: 1.6;">
+                        The throughput of <strong>39,897 cells per shift</strong> justifies high-precision automated orientation and traceability. Electrical parameters mandate strict insulation and continuity testing within the cycle time constraint.
+                    </p>
+                </div>
             </div>
-            <div class="data-card">
-                <i class="fa-solid fa-bolt-lightning"></i>
-                <span class="card-label">Max Voltage</span>
-                <span class="card-value">54.6 V</span>
-            </div>
-            <div class="sidebar-card">
-                <h3>Design Criteria</h3>
-                <ul>
-                    <li>High-speed robotic cell orientation</li>
-                    <li>Fiber laser joining for low thermal impact</li>
-                    <li>100% vision-based polarity verification</li>
-                    <li>Real-time MES data logging</li>
+
+            <div style="background: #0f172a; padding: 35px; border-radius: 4px; text-align: left;">
+                <h4 style="color: #00f2ff; margin-bottom: 25px; font-size: 20px;">Design Criteria</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px;">
+                    <li style="color: #94a3b8; margin-bottom: 15px; display: flex; align-items: flex-start;">
+                        <span style="margin-right: 10px;">•</span> Automated Feeding & Grading
+                    </li>
+                    <li style="color: #94a3b8; margin-bottom: 15px; display: flex; align-items: flex-start;">
+                        <span style="margin-right: 10px;">•</span> Low thermal distortion joining
+                    </li>
+                    <li style="color: #94a3b8; margin-bottom: 15px; display: flex; align-items: flex-start;">
+                        <span style="margin-right: 10px;">•</span> 100% Traceability
+                    </li>
+                    <li style="color: #94a3b8; display: flex; align-items: flex-start;">
+                        <span style="margin-right: 10px;">•</span> Integrated Thermal Management
+                    </li>
                 </ul>
-            </div>
-            <div class="data-card" style="grid-column: span 2; justify-content: flex-start;">
-                <h3 style="font-size: 14px; margin-bottom: 15px; color: #0f172a; text-transform: uppercase;">Design Implications</h3>
-                <p style="font-size: 15px; color: #475569; line-height: 1.8;">
-                    The electrical parameters mandate strict insulation and continuity testing within the cycle time constraint. Throughput justifies high-precision automated orientation to prevent polarity errors during the assembly of 117 cells per module.
-                </p>
             </div>
         </div>
     </div>
