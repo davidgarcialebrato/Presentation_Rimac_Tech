@@ -368,9 +368,51 @@ p, li, td, th {
     </div>
 </div>
 
-<!-- SLIDE 4: MANUFACTURING CONCEPT -->
+<!-- SLIDE 4: ELECTRICAL CHARACTERISTICS -->
 <div class="slide-container">
-    <h2 class="slide-title">3. Manufacturing Concept</h2>
+    <h2 class="slide-title">3. Module Electrical Characteristics</h2>
+    <div class="content-area">
+        <div class="electrical-grid">
+            <!-- Nominal Voltage -->
+            <div class="data-card">
+                <i class="fa-solid fa-battery-half"></i>
+                <span class="card-label">Nominal Voltage</span>
+                <span class="card-value">46.8 V</span>
+            </div>
+            
+            <!-- Max Voltage -->
+            <div class="data-card">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="card-label">Max Voltage</span>
+                <span class="card-value">54.6 V</span>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar-card">
+                <h3>Design Criteria</h3>
+                <ul>
+                    <li>Automated Feeding & Grading</li>
+                    <li>Low thermal distortion joining</li>
+                    <li>100% Traceability</li>
+                    <li>Integrated Thermal Management</li>
+                </ul>
+            </div>
+            
+            <!-- Bottom Content -->
+            <div class="data-card" style="grid-column: span 2; justify-content: flex-start;">
+                <h3 style="font-size: 14px; margin-bottom: 15px; color: #0f172a; text-transform: uppercase;">Design Implications</h3>
+                <p style="font-size: 15px; color: #475569; line-height: 1.8;">
+                    The electrical parameters mandate strict insulation and continuity testing within the cycle time constraint. Throughput justifies high-precision automated orientation to prevent polarity errors during the assembly of 117 cells per module.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-info"><span>Rimac Technology</span><span>Slide 03</span></div>
+</div>
+    
+<!-- SLIDE 5: MANUFACTURING CONCEPT -->
+<div class="slide-container">
+    <h2 class="slide-title">4. Manufacturing Concept</h2>
     <div class="content-area">
         <div class="two-column">
             <div>
@@ -386,7 +428,7 @@ p, li, td, th {
                 <h4 style="color: #00f2ff; margin-bottom: 20px;">Process Pillars</h4>
                 <ul style="padding-left: 20px; color: #cbd5e1; font-size: 16px;">
                     <li>High-speed robotic cell orientation</li>
-                    <li>Fiber laser joining for low thermal impact</li>
+                    <li>Laser welding for low thermal impact</li>
                     <li>100% vision-based polarity verification</li>
                     <li>Real-time MES data logging</li>
                 </ul>
@@ -395,9 +437,9 @@ p, li, td, th {
     </div>
 </div>
 
-<!-- SLIDE 5: PROCESS FLOW -->
+<!-- SLIDE 6: PROCESS FLOW -->
 <div class="slide-container">
-    <h2 class="slide-title">4. High-Level Process Flow</h2>
+    <h2 class="slide-title">5. High-Level Process Flow</h2>
     <div class="content-area">
         <div class="timeline-flow">
             <div class="flow-step">
@@ -406,21 +448,21 @@ p, li, td, th {
             </div>
             <div class="flow-step">
                 <h4>Mechanical</h4>
-                <p>Case & thermal plate loading</p>
+                <p>Fixture prep, Cooling plate & Lower collector</p>
             </div>
             <div class="flow-step">
                 <h4>Assembly</h4>
-                <p>Cell placement & collectors</p>
+                <p>Cell placement & Upper collector</p>
             </div>
             <div class="flow-step">
                 <h4>Joining</h4>
-                <p>Laser weld & inspection</p>
+                <p>Laser welding & inspection</p>
             </div>
         </div>
         <div class="timeline-flow" style="margin-top: 50px;">
              <div class="flow-step">
                 <h4>Integration</h4>
-                <p>Housing cover & cooling pipe</p>
+                <p>Caso, Cover & Cooling tube</p>
             </div>
             <div class="flow-step">
                 <h4>Electrical</h4>
@@ -428,15 +470,15 @@ p, li, td, th {
             </div>
             <div class="flow-step" style="width: 48%;">
                 <h4>Release</h4>
-                <p>Final visual check & Pack</p>
+                <p>Final visual inspection & Packaging</p>
             </div>
         </div>
     </div>
 </div>
 
-<!-- SLIDE 6: LINE DESIGN -->
+<!-- SLIDE 7: LINE DESIGN -->
 <div class="slide-container">
-    <h2 class="slide-title">5. Production Line Design (Cycle Time)</h2>
+    <h2 class="slide-title">6. Production Line Design (Cycle Time)</h2>
     <div class="content-area">
         <div class="chart-container">
             <div class="bar-row">
@@ -444,11 +486,11 @@ p, li, td, th {
                 <div class="bar-track"><div class="bar-fill" style="width: 92%;">60.0s</div><div class="takt-line-indicator" style="left: 100%;"><span class="takt-text">Target: 64.6s</span></div></div>
             </div>
             <div class="bar-row">
-                <div class="bar-label">S3: Thermal & Bottom Collector</div>
+                <div class="bar-label">S3: Cooling & Lower Coll. Pos.</div>
                 <div class="bar-track"><div class="bar-fill" style="width: 97%;">63.0s</div></div>
             </div>
             <div class="bar-row">
-                <div class="bar-label">S4: Automated Cell Placement</div>
+                <div class="bar-label">S4: Cell Feeding & Placement</div>
                 <div class="bar-track"><div class="bar-fill" style="width: 99%; background: #00e5ff;">64.0s</div></div>
             </div>
             <div class="bar-row">
@@ -456,7 +498,7 @@ p, li, td, th {
                 <div class="bar-track"><div class="bar-fill" style="width: 98.5%; background: #00e5ff;">63.5s</div></div>
             </div>
             <div class="bar-row">
-                <div class="bar-label">S6: Inline Quality Check</div>
+                <div class="bar-label">S6: Inline Quality Inspection</div>
                 <div class="bar-track"><div class="bar-fill" style="width: 89%;">58.0s</div></div>
             </div>
             <div class="bar-row">
@@ -468,18 +510,18 @@ p, li, td, th {
     </div>
 </div>
 
-<!-- SLIDE 7: QUALITY -->
+<!-- SLIDE 8: QUALITY -->
 <div class="slide-container">
-    <h2 class="slide-title">6. Quality Control Strategy</h2>
+    <h2 class="slide-title">7. Quality Control Strategy</h2>
     <div class="content-area">
         <div class="two-column">
             <div>
                 <h3 style="border-left: 4px solid #00f2ff; padding-left: 20px;">Inline Process Controls</h3>
                 <ul style="padding-left: 20px; margin-top: 20px;">
-                    <li>Voltage & IR cell grading verification.</li>
+                    <li>Cell sorting verification.</li>
                     <li>Vision systems for polarity detection.</li>
                     <li>Weld monitoring for beam consistency.</li>
-                    <li>Dimensional check of busbar positioning.</li>
+                    <li>Presence checks for thermal barbs & structural parts.</li>
                 </ul>
             </div>
             <div>
@@ -487,7 +529,7 @@ p, li, td, th {
                 <ul style="padding-left: 20px; margin-top: 20px;">
                     <li>High-Voltage (HV) isolation resistance.</li>
                     <li>Module terminal voltage verification.</li>
-                    <li>Continuity testing of monitoring cables.</li>
+                    <li>Electrical continuity across series-parallel path.</li>
                     <li>Short functional load test.</li>
                 </ul>
             </div>
@@ -495,9 +537,9 @@ p, li, td, th {
     </div>
 </div>
 
-<!-- SLIDE 8: INVESTMENT -->
+<!-- SLIDE 9: INVESTMENT -->
 <div class="slide-container">
-    <h2 class="slide-title">7. Investment Estimate (ROM)</h2>
+    <h2 class="slide-title">8. Investment Estimate (ROM)</h2>
     <div class="content-area">
         <table class="table-layout">
             <thead>
@@ -508,20 +550,20 @@ p, li, td, th {
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Laser Welding Cell</td><td>300,000</td><td>Accuracy & process monitoring</td></tr>
-                <tr><td>Robotic Placement Station</td><td>180,000</td><td>Handling complexity (117 cells)</td></tr>
-                <tr><td>End-of-Line Testing System</td><td>120,000</td><td>Safety & certification standards</td></tr>
-                <tr><td>Material Logistics & Conveyors</td><td>90,000</td><td>Internal flow automation</td></tr>
-                <tr><td>Vision & Geometric Inspection</td><td>80,000</td><td>Zero-defect manufacturing</td></tr>
-                <tr style="font-weight: 700;"><td>Total Estimated CAPEX</td><td>1,100,000</td><td>€7.33 per module unit</td></tr>
+                <tr><td>Laser Welding Cell</td><td>300000</td><td>Precision optics & process monitoring</td></tr>
+                <tr><td>Robotic Placement Station</td><td>180000</td><td>6-axis automation & vision guidance</td></tr>
+                <tr><td>End-of-Line Testing System</td><td>120000</td><td>Safety & certification standards</td></tr>
+                <tr><td>Material Logistics & Conveyors</td><td>90000</td><td>Internal flow automation</td></tr>
+                <tr><td>Vision & Geometric Inspection</td><td>80000</td><td>Critical inline checks</td></tr>
+                <tr style="font-weight: 700;"><td>Total Estimated CAPEX</td><td>1100000</td><td>€7.33 per module unit</td></tr>
             </tbody>
         </table>
     </div>
 </div>
 
-<!-- SLIDE 9: RISKS -->
+<!-- SLIDE 10: RISKS -->
 <div class="slide-container">
-    <h2 class="slide-title">8. Key Manufacturing Risks</h2>
+    <h2 class="slide-title">9. Key Manufacturing Risks</h2>
     <div class="content-area">
         <table class="table-layout">
             <thead>
@@ -532,10 +574,10 @@ p, li, td, th {
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Cell Handling</td><td>Damage to wrap/can</td><td>Pneumatic soft-grippers & feeders</td></tr>
-                <tr><td>Cell Placement</td><td>Polarity inversion</td><td>Automated vision verification</td></tr>
-                <tr><td>Laser Welding</td><td>Thermal runaway risk</td><td>Weld parameter limit control</td></tr>
-                <tr><td>Cooling Pipe</td><td>Coolant leakage</td><td>Integrated pressure leak test</td></tr>
+                <tr><td>Cell Sorting</td><td>Mismatch (Cap/Res)</td><td>Automated grading & batch sorting</td></tr>
+                <tr><td>Cell Placement</td><td>Misalignment</td><td>Precision fixtures + Vision Detection</td></tr>
+                <tr><td>Laser Welding</td><td>Thermal runaway risk</td><td>Weld monitoring & Parameter control</td></tr>
+                <tr><td>Cooling Assembly</td><td>Coolant leakage</td><td>Guided integration & Pressure/Leak test</td></tr>
                 <tr><td>Final Test</td><td>Insulation fault</td><td>HV isolation verification (EOL)</td></tr>
             </tbody>
         </table>
